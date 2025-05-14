@@ -105,3 +105,9 @@ const resetGame = () =>{
 btnCheck.addEventListener("click", game)
 btnAgain.addEventListener("click", resetGame)
 updateScore()
+
+userGuess.addEventListener('keydown', (e)=>{
+    if (['e', '+', '-',',','.'].includes(e.key)){
+        e.preventDefault()
+    }
+})
